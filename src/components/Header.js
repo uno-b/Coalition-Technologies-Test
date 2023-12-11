@@ -50,7 +50,9 @@ const Header = ({ historyRef, teamRef }) => {
               })
             }
           >
-            <p className='italic'>01. HISTORY</p>
+            <p className={`italic ${isScrolled ? 'text-black' : `text-white`}`}>
+              01. HISTORY
+            </p>
             <div
               className={`w-full transition-all group-hover:w-0 border-b-2 ${
                 isScrolled ? 'border-black' : 'border-white'
@@ -65,7 +67,9 @@ const Header = ({ historyRef, teamRef }) => {
               })
             }
           >
-            <p className='italic'>02. TEAM</p>
+            <p className={`italic ${isScrolled ? 'text-black' : `text-white`}`}>
+              02. TEAM
+            </p>
             <div
               className={`w-full transition-all group-hover:w-0 border-b-2 ${
                 isScrolled ? 'border-black' : 'border-white'
